@@ -1,0 +1,25 @@
+#%RAML 1.0 Library
+types:
+  finantial:
+    type: object
+    properties:
+      id:
+        type: number
+        required: true
+        description: Identificador de los datos financieros asociados a la tarjeta
+      balance:
+        type: string
+        required: true
+        description: Balance de la tarjeta
+      rate:
+        type: string
+        required: true
+        description: Tasa de la tarjeta
+      tax:
+        type: string
+        required: true
+        description: Impuesto de la tarjeta
+      term:
+        type: string
+        required: true
+        description: plazo de la tarjeta

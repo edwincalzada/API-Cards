@@ -1,0 +1,24 @@
+{
+  "data":
+    {
+      "cardNumber": 9874123647851235,
+      "vigency": "2020",
+      "cve": 456,
+      "cardType": "CreditCard",
+      "customer": {
+        "id": 3456789,
+        "firstName": "Edgar",
+        "lastName": "López",
+        "secondLastName": "Romero",
+        "gender": "male",
+        "RFC": "LORE123456"
+      },
+      "finantialData": {
+        "id": 9874,
+        "balance": "5415",
+        "rate": "49",
+        "tax": "900",
+        "term": "Monthly"
+      }
+    }
+}

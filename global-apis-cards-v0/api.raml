@@ -1,0 +1,34 @@
+#%RAML 1.0
+title: "Cards"
+version: v0.1.0
+description: Apid de Cards
+baseUri: https://www.bbvaapis.com/cards/v0
+
+uses:
+  card: types/card.raml
+  customer: types/customer.raml
+  finantial: types/finantial.raml
+
+/cards:
+  description: |
+      Service for managing cards data with a specific identifier.
+
+  get:
+    description: Method for consulting card information by cardNumber
+    queryParameters:
+      cardNumber:
+        description: |
+          number of card
+        type: number
+        minimum: 16
+        required: false
+        example: 98773215987514749
+    responses:
+      200:
+        body:
+          application/json:
+            #example: !include examples/cards_id/example_get200.json
+            type: object
+            properties:
+              data:
+                type: card.card

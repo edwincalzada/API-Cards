@@ -1,0 +1,35 @@
+#%RAML 1.0 Library
+types:
+  customer:
+    type: object
+    properties:
+      id:
+        type: number
+        description: |
+          Unique customer identifier.
+        required: false
+      firstName:
+        type: string
+        description: |
+          Nombre
+        required: false
+      lastName:
+        type: string
+        description: |
+          Apellido Paterno
+        required: false
+      secondLastName:
+        type: string
+        description: |
+          Apellido Materno
+        required: false
+      gender:
+        type: string
+        description: |
+          Genero de la persona.
+        required: false
+      rfc:
+        type: string
+        description: |
+          Registro Federal del Contribuyente
+        required: false

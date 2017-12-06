@@ -1,0 +1,34 @@
+#%RAML 1.0 Library
+uses:
+  customer: ../../global-apis-cards-v0/types/customer.raml
+  finantial: ../../global-apis-cards-v0/types/finantial.raml
+types:
+  card:
+    type: array
+    items:
+      properties:
+        cardNumber:
+          type: number
+          required: true
+          description: card number
+        vigency:
+          type: string
+          required: false
+          description: Card vigency
+        cve:
+          type: integer
+          required: false
+          description: card key security
+          minimum: 3
+        cardType:
+          type: string
+          required: false
+          description: card type
+        customer:
+          type: customer.customer
+          required: false
+          description: Cliente asociado a la tarjeta
+        finantialData:
+          type: finantial.finantial
+          required: false
+          description: Datos de finanzas de la tarjeta

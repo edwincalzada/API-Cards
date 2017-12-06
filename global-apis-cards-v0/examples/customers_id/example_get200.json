@@ -1,0 +1,11 @@
+{
+  "data":
+    {
+      "id": "3456789",
+      "firstName": "Edgar",
+      "lastName": "López",
+      "secondLastName": "Romero",
+      "gender": "male",
+      "RFC": "LORE123456"
+    }
+}
