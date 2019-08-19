@@ -1,15 +1,15 @@
 #%RAML 1.0
-title: "Cards"
+title: "Tarjetas"
 version: v0.1.0
-description: Apid de Cards
-baseUri: https://www.bbvaapis.com/cards/v0
+description: Apid de Tarjetas
+baseUri: http://www.miAPI.com/tarjetas/v0
 
 uses:
-  card: types/card.raml
+  tarjeta: types/tarjeta.raml
   customer: types/customer.raml
   finantial: types/finantial.raml
 
-/cards:
+/tarjetas:
   description: |
       Service for managing cards data with a specific identifier.
 
@@ -31,4 +31,4 @@ uses:
             type: object
             properties:
               data:
-                type: card.card
+                type: tarjeta.tarjeta
